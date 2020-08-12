@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Of Touch and Other Poetries</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="fonts.css" rel="stylesheet" />
+    <!-- loading jQuery -->
+    <script src="jquery.js"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--     <script src="anime.js"></script> -->
+  </head>
+  <body>
+    <section class="intro section">
+      <div class="maintext title">
+        <h1>Of Touch and Other Poetries</h1>
+      </div>
+      <div class="title-swap">
+        <h3>If words can conjure up sensations, can code simulate a caress?
+          <br>
+          “Of Touch and Other Poetries” is born out of the desire to generate words of 
+          <br>
+          physical intimacy online, during a time where we are denied close contact
+        <br>
+          with each other irl. The poems generated here are created by your clicks 
+        <br>
+          and my code, but hopefully can bring solace and remembrance.</h3>
+      </div>
+      <div class="maintext subtitle">
+        <h2><a>generate a verse</a></h2>
+      </div>
+      <div id="explanation">
+        <h2>Using this interactive diagram, find the words that will resonate with you.</h2>
+      </div>
+      <div class="chart">
+<!--         <div class="page2 question1" id="poetry">
+          <h3>what kinds of intimacies do you yearn for these days?</h3>
+        </div> -->
+        <div id="button">
+          <h3 id="x">x</h3>
+        </div>
+        <div class="page2 chart-top">
+          <h2>a lover</h2>
+        </div>
+        <div class="page2 chart-bottom">
+          <h2>a stranger</h2>
+        </div>
+        <div class="page2 chart-left">
+          <h2>platonic</h2>
+        </div>
+        <div class="page2 chart-right">
+          <h2>sensual</h2>
+        </div>
+        <div class="page2 vl"></div>
+        <div class="page2 hl"></div>
+        <div class="chart-main">
+          
+        </div>
+        <div class="chart-section rectangle1"></div>
+        <div class="chart-section rectangle2"></div>
+        <div class="chart-section rectangle3"></div>
+        <div class="chart-section rectangle4"></div>
+        <div class="chart-section rectangle5"></div>
+        <div class="chart-section rectangle6"></div>
+        <div class="chart-section rectangle7"></div>
+        <div class="chart-section rectangle8"></div>
+        <div class="chart-section rectangle9"></div>
+        <div class="BG-opaque"></div>
+      </div>
+    </section>
+    <!--     <script>
+        $('#button').bind('click', function() {
+            // below is the code that gets run afer the button get clicked
+            // first we print to the console that the button was clicked
+            console.log("button clicked!");
+
+            // then we use ajax, to make a request to the server at the /generate route
+            $.get('/generate', function(response) {
+               // below is the code that runs when the python server route returns,
+               // response is a variable which holds the response from the server (a string of text)
+               // and which we can use in whatever way we want
+               // ... first we take this response and print it to the console 
+               console.log(response);
+               // and then we insert the response into the .output-wrapper element 
+               // (this also replaces whatever was in this element before) 
+               $('.output-wrapper').html(response);
+            });
+                  
+            return false;
+        });
+    </script> -->
+    <!-- loading ripple effect -->
+    <script src="jquery.ripples-min.js"></script>
+    <!-- loading animeJS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"
+      integrity="sha256-kRbW+SRRXPogeps8ZQcw2PooWEDPIjVQmN1ocWVQHRY="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+

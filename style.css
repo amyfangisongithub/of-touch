@@ -1,0 +1,282 @@
+body {
+    background-image: url("grad-lightblue.png");
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px 0px;
+  /*   overflow-y: scroll; */
+  /*   scroll-behavior: smooth; */
+  }
+  
+  .section {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  .intro {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    position: relative;
+    background-image: url("grad-lightblue.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: none;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(5vh);
+    }
+    50% {
+      transform: translate(0);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .maintext {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  .title {
+    position: absolute;
+    top: 40vh;
+    left: 26vw;
+  }
+
+  .title-swap {
+      display: block;
+      position: absolute;
+      top: 37.5vh;
+      left: 18vw;
+      text-align: center;
+  }
+  
+  .subtitle {
+    position: absolute;
+    left: 43vw;
+    bottom: 7%;
+  }
+  
+  .about {
+    position: fixed;
+    right: 4vw;
+    top: 1vh;
+  }
+  
+  #month {
+    text-transform: lowercase;
+  }
+  
+  /* ALIGNMENT CHART STYLING HERE! */
+  .chart, .BG-opaque {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0px 0px;
+    /* cursor: url("https://cdn.glitch.com/533c5fe8-4650-4a4d-bd74-08d7e36eed3f%2Fgrad-cursor.png?v=1597037917349"); */
+  }
+  
+  .BG-opaque {
+  /*   background-color: lightblue; */
+    background-color: lightslategrey;
+    mix-blend-mode: lighten;
+    opacity: 0.25;
+    z-index: 0;
+  }
+  
+  #button {
+    border: 2px solid white;
+    width: 3vw;
+    height: 3vw;
+    position: absolute;
+    text-align: center;
+    right: 3vw;
+      top: 5vh;
+    border-radius: 1.5vw;
+    z-index: 3;
+    /* opacity: 0.5; */
+  }
+  
+  #x {
+    position: absolute;
+    text-align: center;
+    top: -1.35vw;
+    left: 0.9vw;
+  }
+  
+  .vl {
+    border-left: 2px solid white;
+    height: 60vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  
+  .hl {
+    border-bottom: 2px solid white;
+    height: 2px;
+    width: 60vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -2px;
+    top: 49.5%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  .page2 {
+    opacity: 1;
+  }
+  
+  .chart-top {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 11%;
+    z-index: 1;
+  }
+  
+  .chart-bottom {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 11%;
+    z-index: 1;
+  }
+  
+  .chart-left {
+    left: 10.5%;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  
+  .chart-right {
+    right: 10.75%;
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+  }
+  
+ #explanation {
+    position: absolute;
+    width: 100vw;
+    left: 21vw;
+    bottom: 7%;
+    color: white;
+  /*   z-index: 1; */
+  }
+  
+  .chart-main {
+  /* background: none; */
+  /*   background-color: white; */
+  /*   border: 2px solid white; */
+    position: absolute;
+    width: 60vw;
+    height: 60vh;
+    top: 19.82%;
+    left: 19.8%;
+    cursor: crosshair;
+    z-index: 3;
+  /*   width: 80vw;
+    height: 80vh;
+    top: 10vh; */
+  /*   left: 10vw; */
+  /*   mask-image: url("https://cdn.glitch.com/533c5fe8-4650-4a4d-bd74-08d7e36eed3f%2Fgrad-lightblue.png?v=1596993948653"); */
+  /*   background-color: lavender;
+    blend-mode: lighten;
+    z-index: 1; */
+  } */
+  
+  .chart-section {
+    background: none;
+  /*   border: 2px solid white; */
+    border: none;
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    cursor: crosshair;
+    z-index: 2;
+  }
+  
+  .rectangle1 {
+    display: block;
+    top: 25%;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  
+  .rectangle2 {
+    display: block;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle3 {
+    display: block;
+    top: 25%;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle4 {
+    top: 45%;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle5 {
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle6 {
+    top: 45%;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle7 {
+    top: 65%;
+    left: 30%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle8 {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .rectangle9 {
+    top: 65%;
+    left: 70%;
+    transform: translateX(-50%);
+  }
+  
