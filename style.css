@@ -1,5 +1,5 @@
 body {
-    background-image: url("Group 180.png");
+    background-image: url("grad-lightblue.png");
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0px 0px;
@@ -22,8 +22,7 @@ body {
     min-width: 100vw;
     display: flex;
     position: relative;
-    background-image: url("Group 180.png");
-/*     background-image: url("grad-lightblue.png"); */
+    background-image: url("grad-lightblue.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
